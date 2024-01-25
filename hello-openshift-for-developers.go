@@ -1,5 +1,13 @@
 package main
 
+import (
+	"fmt"
+	"net/http"
+	"os"
+    "prometheus"
+    "msg"
+)
+
 var httpRequestsTotal = prometheus.NewCounter(
     prometheus.CounterOpts{
             Name: "http_requests_total",
