@@ -1,3 +1,5 @@
+package main
+
 var httpRequestsTotal = prometheus.NewCounter(
     prometheus.CounterOpts{
             Name: "http_requests_total",
